@@ -58,13 +58,10 @@ release:
   ids:
     - none
 signs:
-  - artifacts: checksum
+  - id: gpg
+    artifacts: checksum
     args: ["--batch", "-u", "72D7468F", "--output", "${signature}", "--detach-sign", "${artifact}"]
     cmd: gpg
     signature: ${artifact}.sig
-  - artifacts: checksum
-    args: ["--batch", "-u", "72D7468F", "--output", "${signature}", "--detach-sign", "${artifact}"]
-    cmd: gpg
-    signature: ${artifact}.72D7468F.sig
 snapshot:
   version_template: "{{ .Tag }}-next"
