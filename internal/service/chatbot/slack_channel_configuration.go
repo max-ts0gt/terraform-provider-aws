@@ -5,6 +5,7 @@ package chatbot
 
 import (
 	"context"
+	"sort"
 	"time"
 
 	"github.com/aws/aws-sdk-go-v2/aws"
@@ -176,7 +177,6 @@ func (r *slackChannelConfigurationResource) Read(ctx context.Context, request re
 
 	if err := data.InitFromID(); err != nil {
 		create.AddError(&response.Diagnostics, names.Chatbot, create.ErrActionExpandingResourceId, ResNameSlackChannelConfiguration, data.ChatConfigurationARN.ValueString(), err)
-
 		return
 	}
 
@@ -187,13 +187,17 @@ func (r *slackChannelConfigurationResource) Read(ctx context.Context, request re
 	if tfresource.NotFound(err) {
 		response.Diagnostics.Append(fwdiag.NewResourceNotFoundWarningDiagnostic(err))
 		response.State.RemoveResource(ctx)
-
 		return
 	}
 
 	if err != nil {
 		create.AddError(&response.Diagnostics, names.Chatbot, create.ErrActionReading, ResNameSlackChannelConfiguration, data.ChatConfigurationARN.ValueString(), err)
 		return
+	}
+
+	// Sort SNS Topic ARNs before storing in state
+	if output.SnsTopicArns != nil {
+		sort.Strings(output.SnsTopicArns)
 	}
 
 	response.Diagnostics.Append(fwflex.Flatten(ctx, output, &data)...)
