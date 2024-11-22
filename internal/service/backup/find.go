@@ -11,8 +11,8 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/backup/types"
 	"github.com/hashicorp/aws-sdk-go-base/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
 )
 
 func findJobByID(ctx context.Context, conn *backup.Client, id string) (*backup.DescribeBackupJobOutput, error) {

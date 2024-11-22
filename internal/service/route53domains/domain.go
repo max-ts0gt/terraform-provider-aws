@@ -10,9 +10,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/route53domains"
 	"github.com/aws/aws-sdk-go-v2/service/route53domains/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
 )
 
 func findDomainDetailByName(ctx context.Context, conn *route53domains.Client, name string) (*route53domains.GetDomainDetailOutput, error) {

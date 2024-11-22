@@ -7,7 +7,7 @@ import (
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/quicksight"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func scatterPlotVisualSchema() *schema.Schema {

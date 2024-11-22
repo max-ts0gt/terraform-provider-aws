@@ -8,7 +8,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/rds/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func flattenManagedMasterUserSecret(apiObject *types.MasterUserSecret) map[string]interface{} {

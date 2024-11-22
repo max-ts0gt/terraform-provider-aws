@@ -10,8 +10,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/attr"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-framework/types/basetypes"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	itypes "github.com/max-ts0gt/terraform-provider-aws/internal/types"
 )
 
 func ExpandFrameworkInt32Set(ctx context.Context, v basetypes.SetValuable) []*int32 {

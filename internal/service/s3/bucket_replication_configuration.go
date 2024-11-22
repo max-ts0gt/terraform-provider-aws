@@ -15,13 +15,13 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKResource("aws_s3_bucket_replication_configuration", name="Bucket Replication Configuration")
@@ -799,7 +799,7 @@ func expandReplicationRuleFilter(ctx context.Context, l []interface{}) types.Rep
 	// Specifying more than one of the listed parameters results in a MalformedXML error.
 	// If a filter is specified as filter { prefix = "" } in Terraform, we should send the prefix value
 	// in the API request even if it is an empty value, else Terraform will report non-empty plans.
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23487
+	// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/23487
 	if v, ok := tfMap[names.AttrPrefix].(string); ok && result == nil {
 		result = &types.ReplicationRuleFilterMemberPrefix{
 			Value: v,

@@ -15,11 +15,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfappautoscaling "github.com/hashicorp/terraform-provider-aws/internal/service/appautoscaling"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfappautoscaling "github.com/max-ts0gt/terraform-provider-aws/internal/service/appautoscaling"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestValidatePolicyImportInput(t *testing.T) {
@@ -431,7 +431,7 @@ func TestAccAppAutoScalingPolicy_multiplePoliciesSameResource(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7963
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/7963
 func TestAccAppAutoScalingPolicy_ResourceID_forceNew(t *testing.T) {
 	ctx := acctest.Context(t)
 	var policy awstypes.ScalingPolicy

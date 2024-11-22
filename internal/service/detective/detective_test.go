@@ -7,7 +7,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
 )
 
 func TestAccDetective_serial(t *testing.T) {

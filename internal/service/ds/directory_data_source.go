@@ -10,11 +10,11 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/directoryservice/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKDataSource("aws_directory_service_directory", name="Directory")

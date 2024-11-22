@@ -10,7 +10,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/workspaces"
 	"github.com/aws/aws-sdk-go-v2/service/workspaces/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
 )
 
 const (

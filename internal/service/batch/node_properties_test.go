@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest/jsoncmp"
-	tfbatch "github.com/hashicorp/terraform-provider-aws/internal/service/batch"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest/jsoncmp"
+	tfbatch "github.com/max-ts0gt/terraform-provider-aws/internal/service/batch"
 )
 
 func TestEquivalentNodePropertiesJSON(t *testing.T) {

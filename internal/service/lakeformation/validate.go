@@ -7,7 +7,7 @@ import (
 	"fmt"
 
 	"github.com/YakDriver/regexache"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
 )
 
 func validPrincipal(v interface{}, k string) (ws []string, errors []error) {

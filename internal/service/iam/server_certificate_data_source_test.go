@@ -14,9 +14,9 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/iam/types"
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfiam "github.com/hashicorp/terraform-provider-aws/internal/service/iam"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfiam "github.com/max-ts0gt/terraform-provider-aws/internal/service/iam"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestResourceSortByExpirationDate(t *testing.T) {

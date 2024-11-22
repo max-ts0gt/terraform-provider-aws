@@ -8,8 +8,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/transfer"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/logging"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/logging"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
 )
 
 // updateTagsNoIgnoreSystem updates transfer service tags.

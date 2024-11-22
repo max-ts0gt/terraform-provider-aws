@@ -5,9 +5,9 @@ package appsync
 import (
 	"context"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/types"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 type servicePackage struct{}

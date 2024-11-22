@@ -6,8 +6,8 @@ package dynamodb_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfdynamodb "github.com/hashicorp/terraform-provider-aws/internal/service/dynamodb"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfdynamodb "github.com/max-ts0gt/terraform-provider-aws/internal/service/dynamodb"
 )
 
 func TestARNForNewRegion(t *testing.T) {

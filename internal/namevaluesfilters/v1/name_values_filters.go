@@ -4,7 +4,7 @@
 package v1
 
 import (
-	"github.com/hashicorp/terraform-provider-aws/internal/namevaluesfilters"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/namevaluesfilters"
 )
 
 type NameValuesFilters struct {

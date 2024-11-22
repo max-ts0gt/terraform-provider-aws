@@ -6,8 +6,8 @@ package json
 import (
 	"bytes"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/json/ujson"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/stack"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/json/ujson"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/types/stack"
 )
 
 // RemoveFields removes the specified fields from a valid JSON string.

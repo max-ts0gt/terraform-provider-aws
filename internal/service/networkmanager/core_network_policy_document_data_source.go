@@ -13,10 +13,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKDataSource("aws_networkmanager_core_network_policy_document", name="Core Network Policy Document")

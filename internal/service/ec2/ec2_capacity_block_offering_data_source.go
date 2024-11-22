@@ -12,9 +12,9 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	fwflex "github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework"
+	fwflex "github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @FrameworkDataSource("aws_ec2_capacity_block_offering", name="Capacity Block Offering")

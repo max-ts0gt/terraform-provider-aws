@@ -9,10 +9,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/path"
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // ResourceWithConfigure is a structure to be embedded within a Resource that implements the ResourceWithConfigure interface.

@@ -9,9 +9,9 @@ import (
 
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfsync "github.com/hashicorp/terraform-provider-aws/internal/experimental/sync"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfsync "github.com/max-ts0gt/terraform-provider-aws/internal/experimental/sync"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func testAccTransitGatewayRouteTableAssociationsDataSource_basic(t *testing.T, semaphore tfsync.Semaphore) {

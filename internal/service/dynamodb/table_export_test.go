@@ -14,10 +14,10 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-sdk/v2/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfdynamodb "github.com/hashicorp/terraform-provider-aws/internal/service/dynamodb"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfdynamodb "github.com/max-ts0gt/terraform-provider-aws/internal/service/dynamodb"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccDynamoDBTableExport_basic(t *testing.T) {

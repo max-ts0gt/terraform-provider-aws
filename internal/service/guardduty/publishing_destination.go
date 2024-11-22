@@ -14,12 +14,12 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/guardduty/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKResource("aws_guardduty_publishing_destination")

@@ -9,9 +9,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/eventbridge/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func resourceRuleV0() *schema.Resource {

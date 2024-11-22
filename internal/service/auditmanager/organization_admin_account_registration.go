@@ -14,10 +14,10 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @FrameworkResource

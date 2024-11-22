@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/generate/common"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 //go:embed custom_endpoints_header.tmpl

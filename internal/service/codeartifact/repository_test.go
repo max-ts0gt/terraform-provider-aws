@@ -11,11 +11,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfcodeartifact "github.com/hashicorp/terraform-provider-aws/internal/service/codeartifact"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfcodeartifact "github.com/max-ts0gt/terraform-provider-aws/internal/service/codeartifact"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func testAccRepository_basic(t *testing.T) {

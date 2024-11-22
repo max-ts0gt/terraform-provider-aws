@@ -6,7 +6,7 @@ package controltower_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
 )
 
 func TestAccControlTower_serial(t *testing.T) {

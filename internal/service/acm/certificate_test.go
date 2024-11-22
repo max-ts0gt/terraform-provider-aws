@@ -21,11 +21,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-testing/statecheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
 	"github.com/hashicorp/terraform-plugin-testing/tfjsonpath"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfacm "github.com/hashicorp/terraform-provider-aws/internal/service/acm"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfacm "github.com/max-ts0gt/terraform-provider-aws/internal/service/acm"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccACMCertificate_emailValidation(t *testing.T) {
@@ -960,7 +960,7 @@ func TestAccACMCertificate_privateCertificate_removeEarlyRenewal(t *testing.T) {
 }
 
 // TestAccACMCertificate_Root_trailingPeriod updated in 3.0 to account for domain_name plan-time validation
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13510
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/13510
 func TestAccACMCertificate_Root_trailingPeriod(t *testing.T) {
 	ctx := acctest.Context(t)
 	rootDomain := acctest.ACMCertificateDomainFromEnv(t)
@@ -1598,7 +1598,7 @@ func TestAccACMCertificate_Imported_validityDates(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/7103
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/7103
 // lintignore:AT002
 func TestAccACMCertificate_Imported_ipAddress(t *testing.T) {
 	ctx := acctest.Context(t)
@@ -1631,7 +1631,7 @@ func TestAccACMCertificate_Imported_ipAddress(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/15055
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/15055
 func TestAccACMCertificate_PrivateKey_ReimportWithTags(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_acm_certificate.test"

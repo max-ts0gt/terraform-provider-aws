@@ -10,11 +10,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource"
 	"github.com/hashicorp/terraform-plugin-testing/knownvalue"
 	"github.com/hashicorp/terraform-plugin-testing/statecheck"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfmaps "github.com/hashicorp/terraform-provider-aws/internal/maps"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfmaps "github.com/max-ts0gt/terraform-provider-aws/internal/maps"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/types"
 )
 
 var _ statecheck.StateCheck = expectFullTagsCheck{}

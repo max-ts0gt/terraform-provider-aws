@@ -10,8 +10,8 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/elasticloadbalancing/types"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func flattenAccessLog(apiObject *awstypes.AccessLog) []interface{} {

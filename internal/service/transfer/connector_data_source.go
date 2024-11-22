@@ -13,12 +13,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	fwtypes "github.com/max-ts0gt/terraform-provider-aws/internal/framework/types"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @FrameworkDataSource(name="Connector")

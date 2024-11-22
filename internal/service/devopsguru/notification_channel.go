@@ -21,14 +21,14 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/schema/validator"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	fwtypes "github.com/max-ts0gt/terraform-provider-aws/internal/framework/types"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @FrameworkResource(name="Notification Channel")

@@ -12,10 +12,10 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tfmaps "github.com/hashicorp/terraform-provider-aws/internal/maps"
-	"github.com/hashicorp/terraform-provider-aws/internal/sdkv2"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
+	tfmaps "github.com/max-ts0gt/terraform-provider-aws/internal/maps"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sdkv2"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	itypes "github.com/max-ts0gt/terraform-provider-aws/internal/types"
 	"github.com/shopspring/decimal"
 )
 

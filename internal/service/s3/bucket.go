@@ -29,16 +29,16 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/structure"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/flex"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 const (
@@ -1915,7 +1915,7 @@ func expandBucketVersioningConfigurationCreate(l []interface{}) *types.Versionin
 	// Only set and return a non-nil VersioningConfiguration with at least one of
 	// MFADelete or Status enabled as the PutBucketVersioning API request
 	// does not need to be made for new buckets that don't require versioning.
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/4494.
+	// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/4494.
 
 	if v, ok := tfMap[names.AttrEnabled].(bool); ok && v {
 		apiObject.Status = types.BucketVersioningStatusEnabled

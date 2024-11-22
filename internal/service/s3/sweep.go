@@ -17,12 +17,12 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/s3/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/id"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv2"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/framework"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/awsv2"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/framework"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func RegisterSweepers() {

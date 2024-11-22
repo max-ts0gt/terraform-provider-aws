@@ -12,9 +12,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/route53"
 	"github.com/hashicorp/aws-sdk-go-base/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/awsv2"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func RegisterSweepers() {

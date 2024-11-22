@@ -17,12 +17,12 @@ import (
 	"github.com/hashicorp/aws-sdk-go-base/v2/tfawserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKDataSource("aws_instance", name="Instance")
@@ -599,12 +599,12 @@ func instanceDescriptionAttributes(ctx context.Context, d *schema.ResourceData, 
 	}
 
 	// AWS Standard will return InstanceCreditSpecification.NotSupported errors for EC2 Instance IDs outside T2 and T3 instance types
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/8055
+	// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/8055
 	if aws.ToBool(instanceTypeInfo.BurstablePerformanceSupported) {
 		instanceCreditSpecification, err := findInstanceCreditSpecificationByID(ctx, conn, d.Id())
 
 		// Ignore UnsupportedOperation errors for AWS China and GovCloud (US).
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/pull/4362.
+		// Reference: https://github.com/max-ts0gt/terraform-provider-aws/pull/4362.
 		if tfawserr.ErrCodeEquals(err, errCodeUnsupportedOperation) {
 			err = nil
 		}

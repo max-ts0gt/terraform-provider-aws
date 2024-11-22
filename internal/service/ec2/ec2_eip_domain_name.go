@@ -17,11 +17,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/planmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/resource/schema/stringplanmodifier"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	fwflex "github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/fwdiag"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework"
+	fwflex "github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @FrameworkResource("aws_eip_domain_name", name="EIP Domain Name")

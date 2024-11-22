@@ -18,14 +18,14 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	itypes "github.com/max-ts0gt/terraform-provider-aws/internal/types"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKResource("aws_iam_access_key", name="Access Key")

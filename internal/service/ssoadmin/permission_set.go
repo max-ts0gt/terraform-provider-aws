@@ -19,14 +19,14 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKResource("aws_ssoadmin_permission_set", name="Permission Set")
@@ -193,7 +193,7 @@ func resourcePermissionSetUpdate(ctx context.Context, d *schema.ResourceData, me
 		// The AWS SSO API requires we send the RelayState value regardless if it's unchanged
 		// else the existing Permission Set's RelayState value will be cleared;
 		// for consistency, we'll check for the "presence of" instead of "if changed" for all input fields
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/17411
+		// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/17411
 
 		if v, ok := d.GetOk(names.AttrDescription); ok {
 			input.Description = aws.String(v.(string))

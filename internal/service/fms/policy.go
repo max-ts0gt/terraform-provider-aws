@@ -17,15 +17,15 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/structure"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/flex"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKResource("aws_fms_policy", name="Policy")
@@ -230,7 +230,7 @@ func resourcePolicyCreate(ctx context.Context, d *schema.ResourceData, meta inte
 
 	// System problems can arise during FMS policy updates (maybe also creation),
 	// so we set the following operation as retryable.
-	// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23946.
+	// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/23946.
 	const (
 		timeout = 1 * time.Minute
 	)
@@ -307,7 +307,7 @@ func resourcePolicyUpdate(ctx context.Context, d *schema.ResourceData, meta inte
 
 		// System problems can arise during FMS policy updates (maybe also creation),
 		// so we set the following operation as retryable.
-		// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/23946.
+		// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/23946.
 		const (
 			timeout = 1 * time.Minute
 		)

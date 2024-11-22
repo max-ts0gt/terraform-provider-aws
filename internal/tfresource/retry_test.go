@@ -12,8 +12,8 @@ import (
 
 	"github.com/aws/aws-sdk-go/aws/awserr"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
 )
 
 //nolint:tparallel

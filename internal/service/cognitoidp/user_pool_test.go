@@ -15,11 +15,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfcognitoidp "github.com/hashicorp/terraform-provider-aws/internal/service/cognitoidp"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfcognitoidp "github.com/max-ts0gt/terraform-provider-aws/internal/service/cognitoidp"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func init() {
@@ -225,7 +225,7 @@ func TestAccCognitoIDPUserPool_withAdminCreateUser(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/11858
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/11858
 func TestAccCognitoIDPUserPool_withAdminCreateUserAndPasswordPolicy(t *testing.T) {
 	ctx := acctest.Context(t)
 	var pool awstypes.UserPoolType
@@ -1371,7 +1371,7 @@ func TestAccCognitoIDPUserPool_WithLambda_preGenerationTokenConfig(t *testing.T)
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38164.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38164.
 func TestAccCognitoIDPUserPool_addLambda(t *testing.T) {
 	ctx := acctest.Context(t)
 	var pool awstypes.UserPoolType
@@ -1547,7 +1547,7 @@ func TestAccCognitoIDPUserPool_schemaAttributesModified(t *testing.T) {
 	})
 }
 
-// Ref: https://github.com/hashicorp/terraform-provider-aws/issues/21654
+// Ref: https://github.com/max-ts0gt/terraform-provider-aws/issues/21654
 func TestAccCognitoIDPUserPool_schemaAttributesStringAttributeConstraints(t *testing.T) {
 	ctx := acctest.Context(t)
 	var pool awstypes.UserPoolType

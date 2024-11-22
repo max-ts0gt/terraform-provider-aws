@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfservicediscovery "github.com/hashicorp/terraform-provider-aws/internal/service/servicediscovery"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfservicediscovery "github.com/max-ts0gt/terraform-provider-aws/internal/service/servicediscovery"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestValidNamespaceName(t *testing.T) {

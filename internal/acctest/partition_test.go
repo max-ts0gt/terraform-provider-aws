@@ -6,8 +6,8 @@ package acctest_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestIsIsolatedPartition(t *testing.T) {

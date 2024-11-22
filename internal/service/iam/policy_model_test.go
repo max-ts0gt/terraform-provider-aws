@@ -8,10 +8,10 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tfiam "github.com/hashicorp/terraform-provider-aws/internal/service/iam"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	tfiam "github.com/max-ts0gt/terraform-provider-aws/internal/service/iam"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestPolicyHasValidAWSPrincipals(t *testing.T) { // nosemgrep:ci.aws-in-func-name

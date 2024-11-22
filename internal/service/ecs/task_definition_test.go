@@ -14,11 +14,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfecs "github.com/hashicorp/terraform-provider-aws/internal/service/ecs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfecs "github.com/max-ts0gt/terraform-provider-aws/internal/service/ecs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func init() {
@@ -893,7 +893,7 @@ func TestAccECSTaskDefinition_changeVolumesForcesNewResource(t *testing.T) {
 	})
 }
 
-// Regression for https://github.com/hashicorp/terraform-provider-aws/issues/2336
+// Regression for https://github.com/max-ts0gt/terraform-provider-aws/issues/2336
 func TestAccECSTaskDefinition_arrays(t *testing.T) {
 	ctx := acctest.Context(t)
 	var def awstypes.TaskDefinition
@@ -1219,7 +1219,7 @@ func TestAccECSTaskDefinition_trackLatest(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38461.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38461.
 func TestAccECSTaskDefinition_unknownContainerDefinitions(t *testing.T) {
 	ctx := acctest.Context(t)
 	var def awstypes.TaskDefinition
@@ -1242,7 +1242,7 @@ func TestAccECSTaskDefinition_unknownContainerDefinitions(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38543.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38543.
 func TestAccECSTaskDefinition_v5590ContainerDefinitionsRegression(t *testing.T) {
 	ctx := acctest.Context(t)
 	var def awstypes.TaskDefinition
@@ -1335,7 +1335,7 @@ func TestAccECSTaskDefinition_v5590ContainerDefinitionsRegression(t *testing.T) 
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38779.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38779.
 func TestAccECSTaskDefinition_containerDefinitionEmptyPortMappings(t *testing.T) {
 	ctx := acctest.Context(t)
 	var def awstypes.TaskDefinition
@@ -1425,7 +1425,7 @@ func TestAccECSTaskDefinition_containerDefinitionEmptyPortMappings(t *testing.T)
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38782.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38782.
 func TestAccECSTaskDefinition_containerDefinitionDockerLabels(t *testing.T) {
 	ctx := acctest.Context(t)
 	var def awstypes.TaskDefinition
@@ -1462,7 +1462,7 @@ func TestAccECSTaskDefinition_containerDefinitionDockerLabels(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38779.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38779.
 func TestAccECSTaskDefinition_containerDefinitionNullPortMapping(t *testing.T) {
 	ctx := acctest.Context(t)
 	var def awstypes.TaskDefinition

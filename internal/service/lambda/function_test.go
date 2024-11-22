@@ -21,11 +21,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tflambda "github.com/hashicorp/terraform-provider-aws/internal/service/lambda"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tflambda "github.com/max-ts0gt/terraform-provider-aws/internal/service/lambda"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func init() {
@@ -1295,7 +1295,7 @@ func TestAccLambdaFunction_tracing(t *testing.T) {
 // This test is to verify the existing behavior in the Lambda API where the KMS Key ARN
 // is not returned if environment variables are not in use. If the API begins saving this
 // value and the kms_key_arn check begins failing, the documentation should be updated.
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/6366
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/6366
 func TestAccLambdaFunction_KMSKeyARN_noEnvironmentVariables(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1564,7 +1564,7 @@ func TestAccLambdaFunction_VPC_withInvocation(t *testing.T) {
 	})
 }
 
-// See https://github.com/hashicorp/terraform-provider-aws/issues/17385
+// See https://github.com/max-ts0gt/terraform-provider-aws/issues/17385
 // When the vpc config doesn't change the version shouldn't change
 func TestAccLambdaFunction_VPCPublishNo_changes(t *testing.T) {
 	ctx := acctest.Context(t)
@@ -1606,7 +1606,7 @@ func TestAccLambdaFunction_VPCPublishNo_changes(t *testing.T) {
 	})
 }
 
-// See https://github.com/hashicorp/terraform-provider-aws/issues/17385
+// See https://github.com/max-ts0gt/terraform-provider-aws/issues/17385
 // When the vpc config changes the version should change
 func TestAccLambdaFunction_VPCPublishHas_changes(t *testing.T) {
 	ctx := acctest.Context(t)
@@ -1649,7 +1649,7 @@ func TestAccLambdaFunction_VPCPublishHas_changes(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/10044
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/10044
 func TestAccLambdaFunction_VPC_properIAMDependencies(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -2238,7 +2238,7 @@ func TestAccLambdaFunction_skipDestroy(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/29777.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/29777.
 func TestAccLambdaFunction_skipDestroyInconsistentPlan(t *testing.T) {
 	ctx := acctest.Context(t)
 	var conf lambda.GetFunctionOutput

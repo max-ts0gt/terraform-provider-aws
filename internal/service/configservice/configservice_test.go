@@ -7,7 +7,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
 )
 
 func TestAccConfigService_serial(t *testing.T) {

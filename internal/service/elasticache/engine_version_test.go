@@ -11,9 +11,9 @@ import (
 
 	"github.com/YakDriver/regexache"
 	"github.com/hashicorp/go-version"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfelasticache "github.com/hashicorp/terraform-provider-aws/internal/service/elasticache"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfelasticache "github.com/max-ts0gt/terraform-provider-aws/internal/service/elasticache"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestValidMemcachedVersionString(t *testing.T) {

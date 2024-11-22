@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfkinesis "github.com/hashicorp/terraform-provider-aws/internal/service/kinesis"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfkinesis "github.com/max-ts0gt/terraform-provider-aws/internal/service/kinesis"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func testResourceStreamStateDataV0() map[string]interface{} {

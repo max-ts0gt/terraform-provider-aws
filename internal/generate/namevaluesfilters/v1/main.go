@@ -11,9 +11,9 @@ import (
 	"sort"
 	"text/template"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	namevaluesfiltersv1 "github.com/hashicorp/terraform-provider-aws/internal/namevaluesfilters/v1"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/generate/common"
+	namevaluesfiltersv1 "github.com/max-ts0gt/terraform-provider-aws/internal/namevaluesfilters/v1"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 type TemplateData struct {

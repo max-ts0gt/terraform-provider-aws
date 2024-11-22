@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	awstypes "github.com/aws/aws-sdk-go-v2/service/cognitoidentity/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfcognitoidentity "github.com/hashicorp/terraform-provider-aws/internal/service/cognitoidentity"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfcognitoidentity "github.com/max-ts0gt/terraform-provider-aws/internal/service/cognitoidentity"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestValidIdentityPoolName(t *testing.T) {

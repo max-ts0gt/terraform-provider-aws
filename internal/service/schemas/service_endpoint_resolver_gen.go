@@ -11,7 +11,7 @@ import (
 	schemas_sdkv2 "github.com/aws/aws-sdk-go-v2/service/schemas"
 	smithyendpoints "github.com/aws/smithy-go/endpoints"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
 )
 
 var _ schemas_sdkv2.EndpointResolverV2 = resolverSDKv2{}

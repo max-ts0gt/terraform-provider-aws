@@ -17,9 +17,9 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/diag"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflogtest"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	fwtypes "github.com/hashicorp/terraform-provider-aws/internal/framework/types"
-	smithyjson "github.com/hashicorp/terraform-provider-aws/internal/json"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	fwtypes "github.com/max-ts0gt/terraform-provider-aws/internal/framework/types"
+	smithyjson "github.com/max-ts0gt/terraform-provider-aws/internal/json"
 )
 
 func TestExpand(t *testing.T) {

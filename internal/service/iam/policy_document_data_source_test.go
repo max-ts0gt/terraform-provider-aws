@@ -9,8 +9,8 @@ import (
 
 	"github.com/YakDriver/regexache"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccIAMPolicyDocumentDataSource_basic(t *testing.T) {
@@ -345,7 +345,7 @@ func TestAccIAMPolicyDocumentDataSource_overridePolicyDocumentValidJSON(t *testi
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/10777
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/10777
 func TestAccIAMPolicyDocumentDataSource_StatementPrincipalIdentifiers_stringAndSlice(t *testing.T) {
 	ctx := acctest.Context(t)
 	dataSourceName := "data.aws_iam_policy_document.test"
@@ -365,7 +365,7 @@ func TestAccIAMPolicyDocumentDataSource_StatementPrincipalIdentifiers_stringAndS
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/10777
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/10777
 func TestAccIAMPolicyDocumentDataSource_StatementPrincipalIdentifiers_multiplePrincipals(t *testing.T) {
 	ctx := acctest.Context(t)
 	dataSourceName := "data.aws_iam_policy_document.test"

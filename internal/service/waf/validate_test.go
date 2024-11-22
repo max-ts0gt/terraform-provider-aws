@@ -6,7 +6,7 @@ package waf
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestValidMetricName(t *testing.T) {

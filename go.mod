@@ -279,7 +279,6 @@ require (
 	github.com/hashicorp/terraform-plugin-mux v0.16.0
 	github.com/hashicorp/terraform-plugin-sdk/v2 v2.34.0
 	github.com/hashicorp/terraform-plugin-testing v1.10.0
-	github.com/hashicorp/terraform-provider-aws v0.0.0-00010101000000-000000000000
 	github.com/jmespath/go-jmespath v0.4.0
 	github.com/mattbaird/jsonpatch v0.0.0-20240118010651-0ba75a80ca38
 	github.com/mitchellh/copystructure v1.2.0
@@ -366,4 +365,4 @@ require (
 
 replace github.com/hashicorp/terraform-plugin-log => github.com/gdavison/terraform-plugin-log v0.0.0-20230928191232-6c653d8ef8fb
 
-replace github.com/hashicorp/terraform-provider-aws => ./
+replace github.com/max-ts0gt/terraform-provider-aws => ./

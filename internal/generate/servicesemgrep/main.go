@@ -19,8 +19,8 @@ import (
 	"strings"
 
 	"github.com/YakDriver/regexache"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	"github.com/hashicorp/terraform-provider-aws/names/data"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/generate/common"
+	"github.com/max-ts0gt/terraform-provider-aws/names/data"
 )
 
 //go:embed semgrep_header.tmpl

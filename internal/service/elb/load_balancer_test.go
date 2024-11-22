@@ -16,11 +16,11 @@ import ( // nosemgrep:ci.semgrep.aws.multiple-service-imports
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfelb "github.com/hashicorp/terraform-provider-aws/internal/service/elb"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfelb "github.com/max-ts0gt/terraform-provider-aws/internal/service/elb"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestLoadBalancerListenerHash(t *testing.T) {
@@ -1121,7 +1121,7 @@ resource "aws_elb" "test" {
   }
 }
 
-# See https://github.com/hashicorp/terraform-provider-aws/issues/2498
+# See https://github.com/max-ts0gt/terraform-provider-aws/issues/2498
 output "lb_name" {
   value = aws_elb.test.name
 }

@@ -9,9 +9,9 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/config"
 	"github.com/aws/aws-sdk-go-v2/service/s3"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfs3 "github.com/hashicorp/terraform-provider-aws/internal/service/s3"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfs3 "github.com/max-ts0gt/terraform-provider-aws/internal/service/s3"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // AWS_REGION=us-west-2 go test -v ./internal/service/s3 -run=TestEmptyBucket -b ewbankkit-test-empty-bucket-001 -f

@@ -11,7 +11,7 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/ec2"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/ec2/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
 )
 
 func statusAvailabilityZoneGroupOptInStatus(ctx context.Context, conn *ec2.Client, name string) retry.StateRefreshFunc {

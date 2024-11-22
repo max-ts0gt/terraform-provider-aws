@@ -14,8 +14,8 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/hashicorp/terraform-provider-aws/names/data"
-	"github.com/hashicorp/terraform-provider-aws/skaff/convert"
+	"github.com/max-ts0gt/terraform-provider-aws/names/data"
+	"github.com/max-ts0gt/terraform-provider-aws/skaff/convert"
 )
 
 //go:embed datasource.gtpl

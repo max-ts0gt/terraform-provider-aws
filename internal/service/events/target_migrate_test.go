@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfevents "github.com/hashicorp/terraform-provider-aws/internal/service/events"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfevents "github.com/max-ts0gt/terraform-provider-aws/internal/service/events"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func testResourceTargetStateDataV0() map[string]interface{} {

@@ -19,9 +19,9 @@ import (
 	session_sdkv1 "github.com/aws/aws-sdk-go/aws/session"
 	baselogging "github.com/hashicorp/aws-sdk-go-base/v2/logging"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 type AWSClient struct {

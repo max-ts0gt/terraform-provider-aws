@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func validationErrorTest(t *testing.T, token string, expectedErr string) {

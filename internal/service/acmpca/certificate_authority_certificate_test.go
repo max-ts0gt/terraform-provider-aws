@@ -11,10 +11,10 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/acmpca"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfacmpca "github.com/hashicorp/terraform-provider-aws/internal/service/acmpca"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfacmpca "github.com/max-ts0gt/terraform-provider-aws/internal/service/acmpca"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccACMPCACertificateAuthorityCertificate_rootCA(t *testing.T) {

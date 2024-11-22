@@ -23,12 +23,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/plancheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/envvar"
-	tfrds "github.com/hashicorp/terraform-provider-aws/internal/service/rds"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/envvar"
+	tfrds "github.com/max-ts0gt/terraform-provider-aws/internal/service/rds"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccRDSInstance_basic(t *testing.T) {
@@ -699,7 +699,7 @@ func TestAccRDSInstance_FinalSnapshotIdentifier_basic(t *testing.T) {
 				),
 			},
 			// Test updating just final_snapshot_identifier.
-			// https://github.com/hashicorp/terraform-provider-aws/issues/26280
+			// https://github.com/max-ts0gt/terraform-provider-aws/issues/26280
 			{
 				Config: testAccInstanceConfig_finalSnapshotID(rName1, rName2),
 				Check: resource.ComposeAggregateTestCheckFunc(
@@ -2199,7 +2199,7 @@ func TestAccRDSInstance_ReplicateSourceDB_replicaMode(t *testing.T) {
 // "management operation" is in progress:
 //
 // InvalidDBInstanceState: Instance cannot currently reboot due to an in-progress management operation
-// https://github.com/hashicorp/terraform-provider-aws/issues/11905
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/11905
 func TestAccRDSInstance_ReplicateSourceDB_parameterGroupTwoStep(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -3374,7 +3374,7 @@ func TestAccRDSInstance_SnapshotIdentifier_tags(t *testing.T) {
 }
 
 func TestAccRDSInstance_SnapshotIdentifier_tagsRemove(t *testing.T) {
-	acctest.Skip(t, "To be fixed: https://github.com/hashicorp/terraform-provider-aws/issues/26808")
+	acctest.Skip(t, "To be fixed: https://github.com/max-ts0gt/terraform-provider-aws/issues/26808")
 	// --- FAIL: TestAccRDSInstance_SnapshotIdentifierTags_unset (1086.15s)
 	//     testing.go:527: Step 0 error: Check failed: Check 4/4 error: aws_db_instance.test: Attribute 'tags.%' expected "0", got "1"
 
@@ -3448,7 +3448,7 @@ func TestAccRDSInstance_SnapshotIdentifier_vpcSecurityGroupIDs(t *testing.T) {
 	})
 }
 
-// Regression reference: https://github.com/hashicorp/terraform-provider-aws/issues/5360
+// Regression reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/5360
 // This acceptance test explicitly tests when snapshot_identifier is set,
 // vpc_security_group_ids is set (which triggered the resource update function),
 // and tags is set which was missing its ARN used for tagging
@@ -4449,7 +4449,7 @@ func TestAccRDSInstance_noDeleteAutomatedBackups(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/8792
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/8792
 func TestAccRDSInstance_PerformanceInsights_disabledToEnabled(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -6062,7 +6062,7 @@ func TestAccRDSInstance_Storage_gp3SQLServer(t *testing.T) {
 	})
 }
 
-// // https://github.com/hashicorp/terraform-provider-aws/issues/33512
+// // https://github.com/max-ts0gt/terraform-provider-aws/issues/33512
 func TestAccRDSInstance_Storage_changeThroughput(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -6101,7 +6101,7 @@ func TestAccRDSInstance_Storage_changeThroughput(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/33512
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/33512
 func TestAccRDSInstance_Storage_changeIOPSThroughput(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -6140,7 +6140,7 @@ func TestAccRDSInstance_Storage_changeIOPSThroughput(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/33512
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/33512
 func TestAccRDSInstance_Storage_changeIOPS(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -6179,7 +6179,7 @@ func TestAccRDSInstance_Storage_changeIOPS(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/33512
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/33512
 func TestAccRDSInstance_Storage_throughputSSE(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {

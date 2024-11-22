@@ -10,13 +10,13 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/autoscaling/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/logging"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/types/option"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/logging"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/types/option"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // findTag fetches an individual autoscaling service tag for a resource.

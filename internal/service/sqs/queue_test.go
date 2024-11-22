@@ -19,11 +19,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-testing/statecheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
 	"github.com/hashicorp/terraform-plugin-testing/tfjsonpath"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfsqs "github.com/hashicorp/terraform-provider-aws/internal/service/sqs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfsqs "github.com/max-ts0gt/terraform-provider-aws/internal/service/sqs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func init() {
@@ -791,7 +791,7 @@ func TestAccSQSQueue_zeroVisibilityTimeoutSeconds(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/19786.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/19786.
 func TestAccSQSQueue_defaultKMSDataKeyReusePeriodSeconds(t *testing.T) {
 	ctx := acctest.Context(t)
 	var queueAttributes map[types.QueueAttributeName]string

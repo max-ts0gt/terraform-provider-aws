@@ -10,8 +10,8 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/datasource"
 	"github.com/hashicorp/terraform-plugin-framework/datasource/schema"
 	"github.com/hashicorp/terraform-plugin-framework/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // See https://docs.aws.amazon.com/general/latest/gr/apprunner.html

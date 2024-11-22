@@ -21,13 +21,13 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/id"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/fwdiag"
-	"github.com/hashicorp/terraform-provider-aws/internal/framework"
-	fwflex "github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/fwdiag"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/framework"
+	fwflex "github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @FrameworkResource

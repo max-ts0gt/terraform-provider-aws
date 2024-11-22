@@ -11,10 +11,10 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/servicediscovery"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/servicediscovery/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/awsv2"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func RegisterSweepers() {

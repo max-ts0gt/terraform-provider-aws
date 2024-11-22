@@ -11,11 +11,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/diag"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	itypes "github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	itypes "github.com/max-ts0gt/terraform-provider-aws/internal/types"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKDataSource("aws_dms_certificate", name="Certificate")

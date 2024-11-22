@@ -19,11 +19,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfrds "github.com/hashicorp/terraform-provider-aws/internal/service/rds"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfrds "github.com/max-ts0gt/terraform-provider-aws/internal/service/rds"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func init() {
@@ -426,7 +426,7 @@ func TestAccRDSCluster_onlyMajorVersion(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/30605
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/30605
 func TestAccRDSCluster_minorVersion(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1641,7 +1641,7 @@ func TestAccRDSCluster_GlobalClusterIdentifierEngineMode_provisioned(t *testing.
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13126
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/13126
 func TestAccRDSCluster_GlobalClusterIdentifier_primarySecondaryClusters(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1679,7 +1679,7 @@ func TestAccRDSCluster_GlobalClusterIdentifier_primarySecondaryClusters(t *testi
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13715
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/13715
 func TestAccRDSCluster_GlobalClusterIdentifier_replicationSourceIdentifier(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1714,7 +1714,7 @@ func TestAccRDSCluster_GlobalClusterIdentifier_replicationSourceIdentifier(t *te
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/14457
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/14457
 func TestAccRDSCluster_GlobalClusterIdentifier_secondaryClustersWriteForwarding(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1973,7 +1973,7 @@ func TestAccRDSCluster_serverlessV2ScalingConfiguration(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/11698
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/11698
 func TestAccRDSCluster_Scaling_defaultMinCapacity(t *testing.T) {
 	ctx := acctest.Context(t)
 	var dbCluster types.DBCluster
@@ -2145,7 +2145,7 @@ func TestAccRDSCluster_SnapshotIdentifierEngineMode_serverless(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/6157
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/6157
 func TestAccRDSCluster_SnapshotIdentifierEngineVersion_different(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -2180,7 +2180,7 @@ func TestAccRDSCluster_SnapshotIdentifierEngineVersion_different(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/6157
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/6157
 func TestAccRDSCluster_SnapshotIdentifierEngineVersion_equal(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -2452,7 +2452,7 @@ func TestAccRDSCluster_SnapshotIdentifier_vpcSecurityGroupIDs(t *testing.T) {
 	})
 }
 
-// Regression reference: https://github.com/hashicorp/terraform-provider-aws/issues/5450
+// Regression reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/5450
 // This acceptance test explicitly tests when snapshot_identifier is set,
 // vpc_security_group_ids is set (which triggered the resource update function),
 // and tags is set which was missing its ARN used for tagging

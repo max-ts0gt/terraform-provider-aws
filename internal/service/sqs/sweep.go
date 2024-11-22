@@ -7,9 +7,9 @@ import (
 	"context"
 
 	"github.com/aws/aws-sdk-go-v2/service/sqs"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv1"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/awsv1"
 )
 
 func RegisterSweepers() {

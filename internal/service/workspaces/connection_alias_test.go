@@ -14,12 +14,12 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/workspaces/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	tfworkspaces "github.com/hashicorp/terraform-provider-aws/internal/service/workspaces"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	tfworkspaces "github.com/max-ts0gt/terraform-provider-aws/internal/service/workspaces"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccWorkSpacesConnectionAlias_basic(t *testing.T) {

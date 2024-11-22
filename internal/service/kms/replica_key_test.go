@@ -15,9 +15,9 @@ import (
 	"github.com/hashicorp/terraform-plugin-testing/knownvalue"
 	"github.com/hashicorp/terraform-plugin-testing/statecheck"
 	"github.com/hashicorp/terraform-plugin-testing/tfjsonpath"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfkms "github.com/hashicorp/terraform-provider-aws/internal/service/kms"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfkms "github.com/max-ts0gt/terraform-provider-aws/internal/service/kms"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccKMSReplicaKey_basic(t *testing.T) {

@@ -15,11 +15,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfelasticache "github.com/hashicorp/terraform-provider-aws/internal/service/elasticache"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfelasticache "github.com/max-ts0gt/terraform-provider-aws/internal/service/elasticache"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccElastiCacheParameterGroup_basic(t *testing.T) {
@@ -125,7 +125,7 @@ func TestAccElastiCacheParameterGroup_addParameter(t *testing.T) {
 	})
 }
 
-// Regression for https://github.com/hashicorp/terraform-provider-aws/issues/116
+// Regression for https://github.com/max-ts0gt/terraform-provider-aws/issues/116
 func TestAccElastiCacheParameterGroup_removeAllParameters(t *testing.T) {
 	ctx := acctest.Context(t)
 	var v awstypes.CacheParameterGroup

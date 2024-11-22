@@ -9,9 +9,9 @@ import (
 	session_sdkv1 "github.com/aws/aws-sdk-go/aws/session"
 	simpledb_sdkv1 "github.com/aws/aws-sdk-go/service/simpledb"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/types"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/types"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 type servicePackage struct{}

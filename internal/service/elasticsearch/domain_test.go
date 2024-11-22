@@ -16,11 +16,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfelasticsearch "github.com/hashicorp/terraform-provider-aws/internal/service/elasticsearch"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfelasticsearch "github.com/max-ts0gt/terraform-provider-aws/internal/service/elasticsearch"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccElasticsearchDomain_basic(t *testing.T) {
@@ -1433,7 +1433,7 @@ func TestAccElasticsearchDomain_VolumeType_update(t *testing.T) {
 // Verifies that EBS volume_type can be changed from gp3 to a type which does not
 // support the throughput and iops input values (ex. gp2)
 //
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/32613
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/32613
 func TestAccElasticsearchDomain_VolumeType_gp3ToGP2(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1479,7 +1479,7 @@ func TestAccElasticsearchDomain_VolumeType_gp3ToGP2(t *testing.T) {
 		}})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13867
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/13867
 func TestAccElasticsearchDomain_VolumeType_missing(t *testing.T) {
 	if testing.Short() {
 		t.Skip("skipping long-running test in short mode")

@@ -23,12 +23,12 @@ import (
 	"github.com/hashicorp/terraform-plugin-testing/statecheck"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
 	"github.com/hashicorp/terraform-plugin-testing/tfjsonpath"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	tfdynamodb "github.com/hashicorp/terraform-provider-aws/internal/service/dynamodb"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	tfdynamodb "github.com/max-ts0gt/terraform-provider-aws/internal/service/dynamodb"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func init() {
@@ -1178,7 +1178,7 @@ func TestAccDynamoDBTable_gsiUpdateOtherAttributes(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/15115
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/15115
 func TestAccDynamoDBTable_lsiNonKeyAttributes(t *testing.T) {
 	ctx := acctest.Context(t)
 	var conf awstypes.TableDescription
@@ -1214,7 +1214,7 @@ func TestAccDynamoDBTable_lsiNonKeyAttributes(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/566
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/566
 func TestAccDynamoDBTable_gsiUpdateNonKeyAttributes(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {
@@ -1310,7 +1310,7 @@ func TestAccDynamoDBTable_gsiUpdateNonKeyAttributes(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/671
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/671
 func TestAccDynamoDBTable_GsiUpdateNonKeyAttributes_emptyPlan(t *testing.T) {
 	ctx := acctest.Context(t)
 	var conf awstypes.TableDescription

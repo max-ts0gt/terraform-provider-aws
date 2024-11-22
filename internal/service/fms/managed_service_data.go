@@ -7,8 +7,8 @@ import (
 	"encoding/json"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/json/ujson"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/json/ujson"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
 )
 
 // suppressEquivalentManagedServiceDataJSON provides custom difference suppression

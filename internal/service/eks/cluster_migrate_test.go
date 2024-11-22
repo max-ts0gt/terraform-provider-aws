@@ -8,9 +8,9 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfeks "github.com/hashicorp/terraform-provider-aws/internal/service/eks"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfeks "github.com/max-ts0gt/terraform-provider-aws/internal/service/eks"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestClusterStateUpgradeV0(t *testing.T) {

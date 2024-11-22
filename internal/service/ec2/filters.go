@@ -13,11 +13,11 @@ import (
 	"github.com/hashicorp/terraform-plugin-framework/tfsdk"
 	"github.com/hashicorp/terraform-plugin-framework/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	fwflex "github.com/hashicorp/terraform-provider-aws/internal/framework/flex"
-	tfmaps "github.com/hashicorp/terraform-provider-aws/internal/maps"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/flex"
+	fwflex "github.com/max-ts0gt/terraform-provider-aws/internal/framework/flex"
+	tfmaps "github.com/max-ts0gt/terraform-provider-aws/internal/maps"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func newFilter(name string, values []string) awstypes.Filter {

@@ -8,8 +8,8 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	tfec2 "github.com/hashicorp/terraform-provider-aws/internal/service/ec2"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	tfec2 "github.com/max-ts0gt/terraform-provider-aws/internal/service/ec2"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // testing rulesForGroupPermissions

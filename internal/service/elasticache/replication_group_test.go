@@ -19,12 +19,12 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfelasticache "github.com/hashicorp/terraform-provider-aws/internal/service/elasticache"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfelasticache "github.com/max-ts0gt/terraform-provider-aws/internal/service/elasticache"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccElastiCacheReplicationGroup_basic(t *testing.T) {
@@ -643,7 +643,7 @@ func TestAccElastiCacheReplicationGroup_stateUpgrade5270(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38464.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38464.
 func TestAccElastiCacheReplicationGroup_stateUpgrade5590(t *testing.T) {
 	ctx := acctest.Context(t)
 	if testing.Short() {

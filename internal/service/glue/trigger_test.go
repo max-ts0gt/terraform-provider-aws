@@ -14,11 +14,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tfglue "github.com/hashicorp/terraform-provider-aws/internal/service/glue"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	tfglue "github.com/max-ts0gt/terraform-provider-aws/internal/service/glue"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccGlueTrigger_basic(t *testing.T) {
@@ -469,7 +469,7 @@ func TestAccGlueTrigger_Actions_security(t *testing.T) {
 }
 
 // Ensure a null action does not trigger a panic
-// Ref: https://github.com/hashicorp/terraform-provider-aws/issues/31213
+// Ref: https://github.com/max-ts0gt/terraform-provider-aws/issues/31213
 func TestAccGlueTrigger_Actions_null(t *testing.T) {
 	ctx := acctest.Context(t)
 

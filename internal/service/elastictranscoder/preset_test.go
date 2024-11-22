@@ -15,11 +15,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	tfet "github.com/hashicorp/terraform-provider-aws/internal/service/elastictranscoder"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	tfet "github.com/max-ts0gt/terraform-provider-aws/internal/service/elastictranscoder"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccElasticTranscoderPreset_basic(t *testing.T) {
@@ -129,7 +129,7 @@ func TestAccElasticTranscoderPreset_disappears(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/14087
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/14087
 func TestAccElasticTranscoderPreset_AudioCodecOptions_empty(t *testing.T) {
 	ctx := acctest.Context(t)
 	var preset awstypes.Preset
@@ -237,7 +237,7 @@ func TestAccElasticTranscoderPreset_full(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/695
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/695
 func TestAccElasticTranscoderPreset_Video_frameRate(t *testing.T) {
 	ctx := acctest.Context(t)
 	var preset awstypes.Preset

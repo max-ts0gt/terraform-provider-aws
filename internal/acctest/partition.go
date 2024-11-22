@@ -6,7 +6,7 @@ package acctest
 import (
 	"github.com/YakDriver/regexache"
 	"github.com/aws/aws-sdk-go/aws/endpoints"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func IsIsolatedRegion(region string) bool {

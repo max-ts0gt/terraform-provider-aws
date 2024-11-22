@@ -4,7 +4,7 @@
 package enum
 
 import (
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
 )
 
 type Valueser[T ~string] interface {

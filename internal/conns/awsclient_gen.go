@@ -244,8 +244,8 @@ import (
 	imagebuilder_sdkv1 "github.com/aws/aws-sdk-go/service/imagebuilder"
 	quicksight_sdkv1 "github.com/aws/aws-sdk-go/service/quicksight"
 	simpledb_sdkv1 "github.com/aws/aws-sdk-go/service/simpledb"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func (c *AWSClient) ACMClient(ctx context.Context) *acm_sdkv2.Client {

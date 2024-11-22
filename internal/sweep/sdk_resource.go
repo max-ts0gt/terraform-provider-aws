@@ -4,7 +4,7 @@
 package sweep
 
 import (
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/sdk"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/sdk"
 )
 
 var NewSweepResource = sdk.NewSweepResource

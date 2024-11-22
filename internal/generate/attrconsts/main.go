@@ -11,7 +11,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/generate/common"
 )
 
 // names/attr_consts_gen.go is used by other generators so it is very important

@@ -14,13 +14,13 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/create"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	interflex "github.com/hashicorp/terraform-provider-aws/internal/flex"
-	tfverifiedpermissions "github.com/hashicorp/terraform-provider-aws/internal/service/verifiedpermissions"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/create"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	interflex "github.com/max-ts0gt/terraform-provider-aws/internal/flex"
+	tfverifiedpermissions "github.com/max-ts0gt/terraform-provider-aws/internal/service/verifiedpermissions"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccVerifiedPermissionsPolicy_basic(t *testing.T) {

@@ -19,9 +19,9 @@ import (
 	"strings"
 
 	"github.com/YakDriver/regexache"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	"github.com/hashicorp/terraform-provider-aws/names/data"
-	namesgen "github.com/hashicorp/terraform-provider-aws/names/generate"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/generate/common"
+	"github.com/max-ts0gt/terraform-provider-aws/names/data"
+	namesgen "github.com/max-ts0gt/terraform-provider-aws/names/generate"
 )
 
 func main() {

@@ -11,7 +11,7 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/servicecatalog/types"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
 )
 
 func recordKeyValueTags(ctx context.Context, tags []awstypes.RecordTag) tftags.KeyValueTags {

@@ -20,15 +20,15 @@ import (
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/validation"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/enum"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs/sdkdiag"
-	tfkms "github.com/hashicorp/terraform-provider-aws/internal/service/kms"
-	tftags "github.com/hashicorp/terraform-provider-aws/internal/tags"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/internal/verify"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/enum"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs/sdkdiag"
+	tfkms "github.com/max-ts0gt/terraform-provider-aws/internal/service/kms"
+	tftags "github.com/max-ts0gt/terraform-provider-aws/internal/tags"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/verify"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 // @SDKResource("aws_dms_endpoint", name="Endpoint")
@@ -793,7 +793,7 @@ func resourceEndpointCreate(ctx context.Context, d *schema.ResourceData, meta in
 	}
 
 	// Send ExtraConnectionAttributes in the API request for all resource types
-	// per https://github.com/hashicorp/terraform-provider-aws/issues/8009
+	// per https://github.com/max-ts0gt/terraform-provider-aws/issues/8009
 	if v, ok := d.GetOk("extra_connection_attributes"); ok {
 		input.ExtraConnectionAttributes = aws.String(v.(string))
 	}

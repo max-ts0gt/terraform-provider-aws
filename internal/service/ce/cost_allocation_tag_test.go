@@ -11,10 +11,10 @@ import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/costexplorer/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfce "github.com/hashicorp/terraform-provider-aws/internal/service/ce"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfce "github.com/max-ts0gt/terraform-provider-aws/internal/service/ce"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccCECostAllocationTag_basic(t *testing.T) {

@@ -10,7 +10,7 @@ import (
 
 	endpoints_sdkv1 "github.com/aws/aws-sdk-go/aws/endpoints"
 	"github.com/hashicorp/terraform-plugin-log/tflog"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
 )
 
 var _ endpoints_sdkv1.Resolver = resolverSDKv1{}

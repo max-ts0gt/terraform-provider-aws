@@ -8,11 +8,11 @@ import (
 
 	"github.com/aws/aws-sdk-go-v2/aws"
 	"github.com/aws/aws-sdk-go-v2/service/appflow"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/awsv2"
-	"github.com/hashicorp/terraform-provider-aws/internal/sweep/sdk"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/awsv2"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/sweep/sdk"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func RegisterSweepers() {

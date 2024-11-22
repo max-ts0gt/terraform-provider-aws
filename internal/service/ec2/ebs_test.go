@@ -6,7 +6,7 @@ package ec2_test
 import (
 	"testing"
 
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
 )
 
 func TestAccEC2EBSDefaultKMSKey_serial(t *testing.T) {

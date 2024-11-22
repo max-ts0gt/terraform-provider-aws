@@ -15,11 +15,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfcognitoidp "github.com/hashicorp/terraform-provider-aws/internal/service/cognitoidp"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfcognitoidp "github.com/max-ts0gt/terraform-provider-aws/internal/service/cognitoidp"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccCognitoIDPUser_basic(t *testing.T) {
@@ -294,7 +294,7 @@ func TestAccCognitoIDPUser_enabled(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/38175.
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/38175.
 func TestAccCognitoIDPUser_v5560Regression(t *testing.T) {
 	ctx := acctest.Context(t)
 	rUserPoolName := sdkacctest.RandomWithPrefix(acctest.ResourcePrefix)

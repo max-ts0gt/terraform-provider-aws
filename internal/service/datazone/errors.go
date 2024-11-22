@@ -5,7 +5,7 @@ package datazone
 
 import (
 	awstypes "github.com/aws/aws-sdk-go-v2/service/datazone/types"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
 )
 
 const (

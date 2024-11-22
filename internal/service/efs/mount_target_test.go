@@ -13,11 +13,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfefs "github.com/hashicorp/terraform-provider-aws/internal/service/efs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfefs "github.com/max-ts0gt/terraform-provider-aws/internal/service/efs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccEFSMountTarget_basic(t *testing.T) {
@@ -117,7 +117,7 @@ func TestAccEFSMountTarget_ipAddress(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/13845
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/13845
 func TestAccEFSMountTarget_IPAddress_emptyString(t *testing.T) {
 	ctx := acctest.Context(t)
 	var mount awstypes.MountTargetDescription

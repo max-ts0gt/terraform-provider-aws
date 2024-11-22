@@ -10,8 +10,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/memorydb"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/memorydb/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/retry"
-	"github.com/hashicorp/terraform-provider-aws/internal/errs"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/errs"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
 )
 
 func FindACLByName(ctx context.Context, conn *memorydb.Client, name string) (*awstypes.ACL, error) {

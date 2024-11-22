@@ -15,9 +15,9 @@ import (
 	"strings"
 
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/generate/common"
-	"github.com/hashicorp/terraform-provider-aws/internal/provider"
-	"github.com/hashicorp/terraform-provider-aws/tools/tfsdk2fw/naming"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/generate/common"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/provider"
+	"github.com/max-ts0gt/terraform-provider-aws/tools/tfsdk2fw/naming"
 	"golang.org/x/exp/slices"
 )
 

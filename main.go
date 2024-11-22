@@ -9,7 +9,7 @@ import (
 	"log"
 
 	"github.com/hashicorp/terraform-plugin-go/tfprotov5/tf5server"
-	"github.com/hashicorp/terraform-provider-aws/internal/provider"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/provider"
 )
 
 func main() {

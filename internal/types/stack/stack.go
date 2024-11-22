@@ -4,7 +4,7 @@
 package stack
 
 import (
-	"github.com/hashicorp/terraform-provider-aws/internal/types/option"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/types/option"
 )
 
 type stack[T any] struct {

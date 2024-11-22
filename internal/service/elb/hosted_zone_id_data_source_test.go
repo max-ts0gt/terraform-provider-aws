@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfelb "github.com/hashicorp/terraform-provider-aws/internal/service/elb"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfelb "github.com/max-ts0gt/terraform-provider-aws/internal/service/elb"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccELBHostedZoneIDDataSource_basic(t *testing.T) {

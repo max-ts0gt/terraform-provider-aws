@@ -11,9 +11,9 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfrouter53 "github.com/hashicorp/terraform-provider-aws/internal/service/route53"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfrouter53 "github.com/max-ts0gt/terraform-provider-aws/internal/service/route53"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccRoute53TrafficPolicyDocumentDataSource_basic(t *testing.T) {

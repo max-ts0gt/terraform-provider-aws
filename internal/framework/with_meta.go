@@ -5,7 +5,7 @@ package framework
 
 import (
 	"github.com/aws/aws-sdk-go-v2/aws/arn"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
 )
 
 var (

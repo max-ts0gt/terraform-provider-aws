@@ -7,8 +7,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/aws"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/appmesh/types"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/helper/schema"
-	"github.com/hashicorp/terraform-provider-aws/internal/flex"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/flex"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func expandClientPolicy(vClientPolicy []interface{}) *awstypes.ClientPolicy {
@@ -215,7 +215,7 @@ func expandGRPCRoute(vGrpcRoute []interface{}) *awstypes.GrpcRoute {
 		grpcRouteMatch := &awstypes.GrpcRouteMatch{}
 
 		// Empty match is allowed.
-		// https://github.com/hashicorp/terraform-provider-aws/issues/16816.
+		// https://github.com/max-ts0gt/terraform-provider-aws/issues/16816.
 
 		if len(vGrpcRouteMatch) > 0 && vGrpcRouteMatch[0] != nil {
 			mGrpcRouteMatch := vGrpcRouteMatch[0].(map[string]interface{})

@@ -21,7 +21,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/hashicorp/terraform-provider-aws/names/data"
+	"github.com/max-ts0gt/terraform-provider-aws/names/data"
 )
 
 // Endpoint constants defined by the AWS SDK v1 but not defined in the AWS SDK v2.

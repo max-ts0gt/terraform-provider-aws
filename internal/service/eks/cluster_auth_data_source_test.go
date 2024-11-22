@@ -9,9 +9,9 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	tfeks "github.com/hashicorp/terraform-provider-aws/internal/service/eks"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	tfeks "github.com/max-ts0gt/terraform-provider-aws/internal/service/eks"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccEKSClusterAuthDataSource_basic(t *testing.T) {

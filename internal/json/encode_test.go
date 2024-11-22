@@ -7,8 +7,8 @@ import (
 	"testing"
 
 	"github.com/google/go-cmp/cmp"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest/jsoncmp"
-	"github.com/hashicorp/terraform-provider-aws/internal/json"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest/jsoncmp"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/json"
 )
 
 func TestEncodeToString(t *testing.T) {

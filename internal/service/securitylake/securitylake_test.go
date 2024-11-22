@@ -10,10 +10,10 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/securitylake"
 	awstypes "github.com/aws/aws-sdk-go-v2/service/securitylake/types"
 	"github.com/hashicorp/aws-sdk-go-base/v2/tfawserr"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfsecuritylake "github.com/hashicorp/terraform-provider-aws/internal/service/securitylake"
-	tfslices "github.com/hashicorp/terraform-provider-aws/internal/slices"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfsecuritylake "github.com/max-ts0gt/terraform-provider-aws/internal/service/securitylake"
+	tfslices "github.com/max-ts0gt/terraform-provider-aws/internal/slices"
 )
 
 // Prerequisite: the current account must be either:

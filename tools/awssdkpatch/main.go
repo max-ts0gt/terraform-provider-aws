@@ -15,7 +15,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/hashicorp/terraform-provider-aws/names/data"
+	"github.com/max-ts0gt/terraform-provider-aws/names/data"
 	"golang.org/x/tools/go/packages"
 )
 

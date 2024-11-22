@@ -13,11 +13,11 @@ import (
 	sdkacctest "github.com/hashicorp/terraform-plugin-testing/helper/acctest"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfdms "github.com/hashicorp/terraform-provider-aws/internal/service/dms"
-	"github.com/hashicorp/terraform-provider-aws/internal/tfresource"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfdms "github.com/max-ts0gt/terraform-provider-aws/internal/service/dms"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/tfresource"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestAccDMSEndpoint_basic(t *testing.T) {
@@ -410,7 +410,7 @@ func TestAccDMSEndpoint_S3_key(t *testing.T) {
 	})
 }
 
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/8009
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/8009
 func TestAccDMSEndpoint_S3_extraConnectionAttributes(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_dms_endpoint.test"
@@ -590,7 +590,7 @@ func TestAccDMSEndpoint_OpenSearch_basic(t *testing.T) {
 // TestAccDMSEndpoint_OpenSearch_extraConnectionAttributes validates
 // extra_connection_attributes handling for "elasticsearch" engine not affected
 // by changes made specific to suppressing diffs in the case of "s3"/"mongodb" engine
-// Reference: https://github.com/hashicorp/terraform-provider-aws/issues/8009
+// Reference: https://github.com/max-ts0gt/terraform-provider-aws/issues/8009
 func TestAccDMSEndpoint_OpenSearch_extraConnectionAttributes(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_dms_endpoint.test"
@@ -911,7 +911,7 @@ func TestAccDMSEndpoint_MongoDB_secretID(t *testing.T) {
 
 // TestAccDMSEndpoint_MongoDB_update validates engine-specific
 // configured fields and extra_connection_attributes now set in the resource
-// per https://github.com/hashicorp/terraform-provider-aws/issues/8009
+// per https://github.com/max-ts0gt/terraform-provider-aws/issues/8009
 func TestAccDMSEndpoint_MongoDB_update(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_dms_endpoint.test"
@@ -1356,7 +1356,7 @@ func TestAccDMSEndpoint_PostgreSQL_update(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/23143
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/23143
 func TestAccDMSEndpoint_PostgreSQL_kmsKey(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_dms_endpoint.test"
@@ -1579,7 +1579,7 @@ func TestAccDMSEndpoint_babelfish(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/23143
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/23143
 func TestAccDMSEndpoint_SQLServer_kmsKey(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_dms_endpoint.test"
@@ -1706,7 +1706,7 @@ func TestAccDMSEndpoint_Sybase_update(t *testing.T) {
 	})
 }
 
-// https://github.com/hashicorp/terraform-provider-aws/issues/23143
+// https://github.com/max-ts0gt/terraform-provider-aws/issues/23143
 func TestAccDMSEndpoint_Sybase_kmsKey(t *testing.T) {
 	ctx := acctest.Context(t)
 	resourceName := "aws_dms_endpoint.test"

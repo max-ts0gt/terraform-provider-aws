@@ -13,10 +13,10 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/securityhub/types"
 	"github.com/hashicorp/terraform-plugin-testing/helper/resource"
 	"github.com/hashicorp/terraform-plugin-testing/terraform"
-	"github.com/hashicorp/terraform-provider-aws/internal/acctest"
-	"github.com/hashicorp/terraform-provider-aws/internal/conns"
-	tfsecurityhub "github.com/hashicorp/terraform-provider-aws/internal/service/securityhub"
-	"github.com/hashicorp/terraform-provider-aws/names"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/acctest"
+	"github.com/max-ts0gt/terraform-provider-aws/internal/conns"
+	tfsecurityhub "github.com/max-ts0gt/terraform-provider-aws/internal/service/securityhub"
+	"github.com/max-ts0gt/terraform-provider-aws/names"
 )
 
 func TestStandardsControlARNToStandardsSubscriptionARN(t *testing.T) {
