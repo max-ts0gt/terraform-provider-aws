@@ -1,18 +1,15 @@
 version: 2
 archives:
-  - files:
-      # Ensure only built binary and license file are archived
+  - format: zip
+    name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
+    files:
       - src: LICENSE
         dst: LICENSE.txt
-    format: zip
-    name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
-before:
-  hooks:
-    - 'go mod download'
+      - src: terraform-registry-manifest.json
+        dst: terraform-registry-manifest.json
+
 builds:
-  -
-    # Binary naming only required for Terraform CLI 0.12
-    binary: '{{ .ProjectName }}_v{{ .Version }}_x5'
+  - binary: 'terraform-provider-{{ .ProjectName }}_v{{ .Version }}'
     env:
       - CGO_ENABLED=0
     flags:
@@ -23,38 +20,21 @@ builds:
     goarch:
       - amd64
       - arm64
-    ignore:
-      - goarch: arm64
-        goos: freebsd
-      - goarch: arm64
-        goos: windows
-      - goarch: arm64
-        goos: openbsd
     ldflags:
       - -s -w -X 'github.com/hashicorp/terraform-provider-aws/version.ProviderVersion={{ .Version }}'
-    mod_timestamp: '{{ .CommitTimestamp }}'
+
 checksum:
-  algorithm: sha256
-  extra_files:
-    - glob: 'terraform-registry-manifest.json'
-      name_template: '{{ .ProjectName }}_{{ .Version }}_manifest.json'
   name_template: '{{ .ProjectName }}_{{ .Version }}_SHA256SUMS'
-release:
-  extra_files:
-    - glob: 'terraform-registry-manifest.json'
-      name_template: '{{ .ProjectName }}_{{ .Version }}_manifest.json'
-  ids:
-    - none
+  algorithm: sha256
+
 signs:
-  - id: primary
+  - id: gpg
     artifacts: checksum
     args: ["--batch", "--no-tty", "--yes", "-u", "ED9001B16D1E224D", "--output", "${signature}", "--detach-sign", "${artifact}"]
     cmd: gpg
     signature: ${artifact}.sig
-  - id: secondary
-    artifacts: checksum
-    args: ["--batch", "--no-tty", "--yes", "-u", "ED9001B16D1E224D", "--output", "${signature}", "--detach-sign", "${artifact}"]
-    cmd: gpg
-    signature: ${artifact}.ED9001B16D1E224D.sig
-snapshot:
-  version_template: "{{ .Tag }}-next"
+
+release:
+  github:
+    owner: max-ts0gt
+    name: terraform-provider-aws
