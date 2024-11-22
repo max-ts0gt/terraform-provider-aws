@@ -61,14 +61,15 @@ release:
   ids:
     - none
 signs:
-  - args: ["sign", "--dearmor", "--file", "${artifact}", "--out", "${signature}"]
+  - id: primary
     artifacts: checksum
-    cmd: signore
+    args: ["--batch", "--no-tty", "--yes", "-u", "72D7468F", "--output", "${signature}", "--detach-sign", "${artifact}"]
+    cmd: gpg
     signature: ${artifact}.sig
-  - args: ["sign", "--dearmor", "--file", "${artifact}", "--out", "${signature}"]
+  - id: secondary
     artifacts: checksum
-    cmd: signore
-    id: key-id
+    args: ["--batch", "--no-tty", "--yes", "-u", "72D7468F", "--output", "${signature}", "--detach-sign", "${artifact}"]
+    cmd: gpg
     signature: ${artifact}.72D7468F.sig
 snapshot:
   version_template: "{{ .Tag }}-next"
