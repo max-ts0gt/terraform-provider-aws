@@ -63,13 +63,13 @@ release:
 signs:
   - id: primary
     artifacts: checksum
-    args: ["--batch", "--no-tty", "--yes", "-u", "72D7468F", "--output", "${signature}", "--detach-sign", "${artifact}"]
+    args: ["--batch", "--no-tty", "--yes", "-u", "ED9001B16D1E224D", "--output", "${signature}", "--detach-sign", "${artifact}"]
     cmd: gpg
     signature: ${artifact}.sig
   - id: secondary
     artifacts: checksum
-    args: ["--batch", "--no-tty", "--yes", "-u", "72D7468F", "--output", "${signature}", "--detach-sign", "${artifact}"]
+    args: ["--batch", "--no-tty", "--yes", "-u", "ED9001B16D1E224D", "--output", "${signature}", "--detach-sign", "${artifact}"]
     cmd: gpg
-    signature: ${artifact}.72D7468F.sig
+    signature: ${artifact}.ED9001B16D1E224D.sig
 snapshot:
   version_template: "{{ .Tag }}-next"
