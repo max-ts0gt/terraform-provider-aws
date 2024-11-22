@@ -57,15 +57,15 @@ release:
       name_template: '{{ .ProjectName }}_{{ .Version }}_manifest.json'
   ids:
     - none
-# signs:
-#   - args: ["sign", "--dearmor", "--file", "${artifact}", "--out", "${signature}"]
-#     artifacts: checksum
-#     cmd: signore
-#     signature: ${artifact}.sig
-#   - args: ["sign", "--dearmor", "--file", "${artifact}", "--out", "${signature}"]
-#     artifacts: checksum
-#     cmd: signore
-#     id: key-id
-#     signature: ${artifact}.72D7468F.sig
+signs:
+  - artifacts: checksum
+    args: ["--batch", "-u", "ED9001B16D1E224D", "--output", "${signature}", "--detach-sign", "${artifact}"]
+    cmd: signore
+    signature: ${artifact}.sig
+  - args: ["sign", "--dearmor", "--file", "${artifact}", "--out", "${signature}"]
+    artifacts: checksum
+    cmd: signore
+    id: key-id
+    signature: ${artifact}.72D7468F.sig
 snapshot:
   version_template: "{{ .Tag }}-next"
