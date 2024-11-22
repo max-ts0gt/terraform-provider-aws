@@ -1,7 +1,7 @@
 version: 2
 archives:
   - format: zip
-    name_template: '{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
+    name_template: 'terraform-provider-{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}'
     files:
       - src: LICENSE
         dst: LICENSE.txt
@@ -9,7 +9,7 @@ archives:
         dst: terraform-registry-manifest.json
 
 builds:
-  - binary: 'terraform-provider-{{ .ProjectName }}_v{{ .Version }}'
+  - binary: 'terraform-provider-{{ .ProjectName }}'
     env:
       - CGO_ENABLED=0
     flags:
